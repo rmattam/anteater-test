@@ -1,7 +1,7 @@
 # anteater-test
 
 
-Setup the python environment in the current working directory for broken.py:
+* Setup the python environment in the current working directory for broken.py:
 Create virtual environment env, activate the environment and install the networkx and pydot packages into the activated env virtual environment.
 
 ```
@@ -12,19 +12,21 @@ Create virtual environment env, activate the environment and install the network
 
 ```
 
-2. Make sure the mpi log files are in the current working directory of broken.py
+* Make sure the mpi log files and communicationCoefficients file are in the current working directory of broken.py
 
-3. Run broken.py
+* Run broken.py
 
 ```
 python3 broken.py 4
 
 ```
 
-4. broken.py generates the following task graph image:
+* broken.py generates the following task graph image:
 ```
 dotOutput.png
 ```
+
+### notes
 
 Checkout folders bug_1 and bug_2 to see the two scenarios where the broken.py code fails.
 * In each folder app.c is the C file that generated the MPI log files.
